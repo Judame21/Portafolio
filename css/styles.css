@@ -46,8 +46,8 @@
     }
     #hero .informacion-contenedor .informacion{
         font-weight: bold;
-        height: calc(100% - 200px);
-        width: calc(100% - 200px);
+        height: calc(120% - 200px);
+        width: calc(120% - 200px);
     }
     
 }
@@ -100,8 +100,8 @@
     #hero .informacion-contenedor .informacion{
         margin-left: 30px;
         font-weight: bold;
-        height: calc(120% - 200px);
-        width: calc(120% - 200px);
+        height: calc(100% - 200px);
+        width: calc(100% - 200px);
     }
 }
 
