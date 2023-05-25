@@ -394,14 +394,13 @@ button {
 }
 
 .seccion_contacto{
-
     display: flex;
     justify-content: center;
     align-items: center;
     background: #F3EFE0;
     width: 100%;
 }
-.contenedor_contato{
+.contenedor_contacto{
     margin: 30px 0px;
 }
 
