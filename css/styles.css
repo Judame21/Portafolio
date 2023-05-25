@@ -1,6 +1,25 @@
-@media (max-width: 600px)
+@media(max-widht: 800px){
+    
+}
+
+
+
+@media (max-width: 700px)
 {
+    #logo{
+        width: 50px;
+        height: 50px;
+        background: white;
+        border-radius: 100%;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: calc(50% - 25px);
+        margin: 20px 0px 0px 0px;
+    }
+
     header{
+        min-height: 100px;
         background: #F3EFE0;
         padding: 8px 50px;
         display: flex;
@@ -10,16 +29,54 @@
         position: relative;
         background: #434242;
     }
-    #logo{
-        width: 60px;
-        height: 60px;
+    
+   
+    nav {
+        float: right;
+        margin-top: 70px;
+      }
+      
+      nav ul {
+        list-style: none;
+        overflow: hidden; 
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      nav ul li:last-child{
+        background-color:#22A39F ;
+        border-radius: 6px;
+        border: 2px solid #22A39F; 
+        margin: 10px;
+      }
+      
+      nav ul li:last-child:hover{
         background: white;
-        border-radius: 100%;
-    }
-    #logo img{
-        border-radius: 100%;
-        border: 2px solid black;
-    }
+        transition: 0.5s;
+      }
+      nav ul li {
+        float: left;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        margin-left: 30px;
+
+      }
+      nav ul li a {
+        display: block;
+        padding: 10px;
+        color: #000000;
+        text-decoration: none;
+        font-weight: 500;
+        
+      }
+      nav ul li a:hover {
+        color: #22A39F;
+        transition: 0.5s;
+        
+      }
+
+
+
     #hero #computadora img{
         height: 850px;
         opacity: calc(80%);
@@ -61,10 +118,9 @@
 }
 
 
-@media (min-width: 601px)
+@media (min-width: 701px)
 {
     header {
-       
         background: #f3efe0f5;
         padding: 10px 50px;
         min-height: 100px;
