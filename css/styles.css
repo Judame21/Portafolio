@@ -49,9 +49,16 @@
         width: calc(120% - 200px);
         text-align: center;
     }
-    
+    .card2{
+        display: none;
+    }
 }
-
+@media (max-width: 900px){
+    .card1
+    {
+        display: none;
+    }
+}
 
 
 @media (min-width: 601px)
@@ -227,6 +234,7 @@ main .social-icons{
     justify-content: center;
     margin-top: 50px;
     list-style: none;
+    flex-wrap: wrap;
 }
 main .social-icons img{
     height: 50px;
@@ -386,13 +394,16 @@ button {
 }
 
 .seccion_contacto{
-    height: 400px;
+
     display: flex;
     justify-content: center;
     align-items: center;
     background: #F3EFE0;
+    width: 100%;
 }
-
+.contenedor_contato{
+    margin: 30px 0px;
+}
 
 html{
     margin: 0;
