@@ -1,7 +1,3 @@
-@media(max-widht: 800px){
-    
-}
-
 
 
 @media (max-width: 700px)
@@ -25,10 +21,7 @@
         display: flex;
         flex-direction: row;
     }
-    #hero{
-        position: relative;
-        background: #434242;
-    }
+    
     
    
     nav {
@@ -54,6 +47,8 @@
         background: white;
         transition: 0.5s;
       }
+
+
       nav ul li {
         float: left;
         font-family: Arial, sans-serif;
@@ -75,7 +70,10 @@
         
       }
 
-
+      #hero{
+        position: relative;
+        background: #434242;
+    }
 
     #hero #computadora img{
         height: 850px;
@@ -106,6 +104,10 @@
         width: calc(120% - 200px);
         text-align: center;
     }
+
+
+
+
     .card2{
         display: none;
     }
@@ -134,7 +136,21 @@
         -moz-box-shadow: 7px 7px 20px 0px rgba(0,0,0,0.5);
         box-shadow: 7px 7px 20px 0px rgba(0,0,0,0.5);
       }
-      
+      #logo{
+        width: 60px;
+        height: 60px;
+        background: white;
+        border-radius: 100%;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 20px 0px 0px 40px;
+    }
+    #logo img{
+        border-radius: 100%;
+        border: 2px solid black;
+    }
       nav {
         float: right;
         margin-top: 20px;
@@ -154,6 +170,7 @@
         background: white;
         transition: 0.5s;
       }
+
       nav ul li {
         float: left;
         font-family: Arial, sans-serif;
@@ -175,25 +192,13 @@
         
       }
 
+
+
     #hero{
         position: relative;
         background: #434242;
     }
-    #logo{
-        width: 60px;
-        height: 60px;
-        background: white;
-        border-radius: 100%;
-        display: inline-block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin: 20px 0px 0px 40px;
-    }
-    #logo img{
-        border-radius: 100%;
-        border: 2px solid black;
-    }
+    
     #hero #computadora img{
         height: 100vh;
         opacity: calc(80%);
@@ -207,7 +212,7 @@
         align-items: center;
         width: 100%;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-40%);
         left: 0;
         color: rgb(255, 255, 255);
         padding: 50px 50px;
@@ -217,12 +222,12 @@
         font-size: 50px;
     }
     #hero .informacion-contenedor .informacion{
-        margin-left: 30px;
         font-weight: bold;
         height: calc(100% - 200px);
         width: calc(100% - 200px);
         text-align: center;
     }
+
 }
 
 *{
@@ -241,13 +246,7 @@ body{
     width: 100%;
 }
 
-.seccion_sobre{
-    min-height: 30vh;
-    background: #F3EFE0;
-    width: 100%;
-    padding: 10% 15%;
-    
-}
+
  #computadora img {
     opacity: calc(80%);
     filter: brightness(0.5);
@@ -278,7 +277,7 @@ body{
 #hero .informacion-contenedor .informacion span{
     color: #ffffff;
     display: inline-block;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     font-size: 20px;
     text-align: center;
     
@@ -292,28 +291,6 @@ p{
 #hero .informacion-contenedor .informacion p{
     
     line-height: 200%;
-}
-
-main .social-icons{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    list-style: none;
-    flex-wrap: wrap;
-}
-main .social-icons img{
-    height: 50px;
-    width: 50px;
-}
-main .social-icons .social-icon {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    margin: 0px 8px 0px 8px;
-    border-radius: 5px;
 }
 
 .card .git-icon img{
@@ -332,24 +309,19 @@ button {
     font-weight: 600;
     background-color: #22A39F;
     border: 2px solid #22A39F; 
+    border-radius: 6px;
   }
   button:hover {
     background-color: white; 
-    color: black;
     transition: 0.5s;
+    color: #22A39F;
   }
 .contenido h3{
     margin-top: 10px;
     color: #22A39F;
 }
 
-.titulo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 30px;
-    color: #22A39F;
-}
+
 .seccion_proyectos{
     background-image: url(../assets/pexels-nikolaos-dimou-2473183.jpg);
     background-repeat: no-repeat;
@@ -373,6 +345,22 @@ button {
     background: #434242;
     mix-blend-mode: overlay; 
     z-index: -1;
+}
+
+
+.seccion_sobre{
+    min-height: 30vh;
+    background: #F3EFE0;
+    width: 100%;
+    padding: 10% 15%;
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    color: #22A39F;
 }
 
 .contenedor_barras{
@@ -406,19 +394,16 @@ button {
     background-color: #22A39F;
 }
 
-.contenido_proyectos{
-    transform: translateY(+8%);
-   
-}
 
+
+.contenido_proyectos{
+    transform: translateY(+8%);  
+}
 .seccion_proyectos2{
-    
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
-
 .container{
     width: 100%;
     display: flex;
@@ -442,9 +427,7 @@ button {
     display: flex;
     margin: 20px 20px;
     justify-content: space-around;
-
 }
-
 .card:hover{
     box-shadow: 5px 5px 20px rgb(255, 255, 255);
     transform: translateY(-3%);
@@ -458,6 +441,10 @@ button {
     text-align: center;
 }
 
+
+
+
+
 .seccion_contacto{
     display: flex;
     justify-content: center;
@@ -466,6 +453,33 @@ button {
     width: 100%;
 }
 .contenedor_contacto{
-    margin: 30px ;
+    margin: 100px 40px ;
+}
+main .social-icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+main .social-icons img{
+    height: 50px;
+    width: 50px;
+}
+main .social-icons .social-icon {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 0px 8px 0px 8px;
+    border-radius: 5px;
 }
 
+
+
+
+.typed{
+    color: #22A39F;
+}
